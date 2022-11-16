@@ -1,5 +1,4 @@
 <script>
-	import Header from '../components/Header.svelte'
 	import Footer from '../components/Footer.svelte'
 	import Dropdown from '../components/Dropdown.svelte';
 </script>
@@ -14,6 +13,7 @@
 <style>
 :root{
 		--bg-color: #282828;
+		--card-body: red;
 		--text-color: #fbf1c7;
 		--link-color: #fbf1c7;
 		--bootstrap-nav: #fbf1c7;
