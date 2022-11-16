@@ -11,9 +11,8 @@
 
 
 <style>
-:root{
+:root {
 		--bg-color: #282828;
-		--card-body: red;
 		--text-color: #fbf1c7;
 		--link-color: #fbf1c7;
 		--bootstrap-nav: #fbf1c7;
