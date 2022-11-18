@@ -8,12 +8,14 @@ Construir uma página web, como um portifólio, contendo uma foto de cada um dos
 
 O site é composto por duas seções:
 
-Home
-Portifólios
+- Home
+
+- Portifólios
 
 ## Tecnologias Utilizadas
 
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
-Frameworks - Svelte e Svelte Kit;
-Bibliotecas - Bootstrap e CSS.
+- Frameworks - Svelte e Svelte Kit;
+
+- Bibliotecas - Bootstrap e CSS.
