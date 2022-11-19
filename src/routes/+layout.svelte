@@ -1,9 +1,9 @@
 <script>
 	import Footer from '../components/Footer.svelte'
-	import Dropdown from '../components/Dropdown.svelte';
+	import Header from '../components/Header.svelte';
 </script>
 
-<Dropdown/>
+<Header/>
 <div class="wrapper d-flex flex-column min-vh-100 px-5 mt-3">
 	<slot></slot>
 </div>

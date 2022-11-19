@@ -7,7 +7,7 @@
 	<nav id="nav" class="navbar shadow-sm navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			<div class="navbar-brand">
-				<a data-sveltekit-prefetch href="/">Home</a>
+				<a class="brand" data-sveltekit-prefetch href="/">Home</a>
 			</div>
 
 			<button 
@@ -23,24 +23,21 @@
 
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-
-					<li class="nav-item" class:active={$page.url.pathname === '/portfolios/pedro-martins'}>
-						<div class="nav-link">
-							<a data-sveltekit-prefetch href="/portfolios/pedro-martins">Pedro</a>
-						</div>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="/" data-bs-toggle="dropdown">Portfólios</a>
+						<!-- add bg-light || bg dark on toggle -->
+						<ul class="dropdown-menu ">
+							<li class:active={$page.url.pathname === "portfolios/pedro-martins"}>
+								<a class="dropdown-item" href="/portfolios/pedro-martins">Pedro Martins</a>
+							</li>
+							<li class:active={$page.url.pathname === "portfolios/alisson"}>
+								<a class="dropdown-item" href="/portfolios/alisson">Alisson</a>
+							</li>
+							<li class:active={$page.url.pathname === "portfolios/pedro-henrique"}>
+								<a class="dropdown-item" href="/portfolios/pedro-henrique">Pedro Henrique</a>
+							</li>
+						</ul>
 					</li>
-			
-				<li class="nav-item">
-					<div class="nav-link" class:active={$page.url.pathname === "/portfolios/pedro-henrique"}>
-						<a data-sveltekit-prefetch href="/portfolios/pedro-henrique">PH</a>
-					</div>
-				</li>
-
-				<li class="nav-item">
-					<div class="nav-link" class:active={$page.url.pathname === "/portfolios/alisson"}>
-						<a data-sveltekit-prefetch href="/portfolios/alisson">Alisson</a>
-					</div>
-				</li>
 					<Toggle/>
 				</ul>
 			</div>
@@ -49,6 +46,26 @@
 </header>
 
 <style>
+
+	:global(a.brand) {
+		font-family: 'Lobster Two', cursive;
+	}
+	
+	:global(a.nav-link) {
+		color: var(--link-color);
+		text-decoration: none;
+	}
+
+	:global(a.nav-link:hover) {
+		color: #d79921;
+		text-decoration: none;
+	}
+
+	:global(a.nav-link.dark) {
+		color: #f8f8f8;
+		text-decoration: none;
+	}
+
 	:global(a) {
 		color: var(--link-color);
 		text-decoration: none;
