@@ -7,7 +7,7 @@
 	<nav id="nav" class="navbar shadow-sm navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			<div class="navbar-brand">
-				<a data-sveltekit-prefetch href="/">Home</a>
+				<a class="brand" data-sveltekit-prefetch href="/">Home</a>
 			</div>
 
 			<button 
@@ -46,6 +46,10 @@
 </header>
 
 <style>
+
+	:global(a.brand) {
+		font-family: 'Lobster Two', cursive;
+	}
 	
 	:global(a.nav-link) {
 		color: var(--link-color);

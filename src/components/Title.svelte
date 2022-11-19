@@ -11,7 +11,8 @@
 
 <style>
 	:global() h1 { 
-		font-family: 'Lobster Two', cursive;
+		font-family: cursive;
+		font-size: 4em;
 		color:#98971a;
 	}
 

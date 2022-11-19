@@ -18,4 +18,4 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
 - Frameworks - Svelte e Svelte Kit;
 
-- Bibliotecas - Bootstrap e CSS.
+- Bibliotecas - Bootstrap e SCSS.
