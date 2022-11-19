@@ -24,7 +24,7 @@
 		transition: background-color 0.3s;
 		font-family: 'Roboto', sans-serif;	
 	}
-
+	
 	:global(body.dark) {
 		--bg-color: #282a36;
 		--text-color: #f8f8f2;

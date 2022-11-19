@@ -46,6 +46,7 @@
 </header>
 
 <style>
+	
 	:global(a.nav-link) {
 		color: var(--link-color);
 		text-decoration: none;

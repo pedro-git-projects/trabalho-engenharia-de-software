@@ -11,7 +11,7 @@
 
 <style>
 	:global() h1 { 
-		font-family: 'JMH Cthulhumbus UGalt1'; 
+		font-family: 'Lobster Two', cursive;
 		color:#98971a;
 	}
 
