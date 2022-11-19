@@ -17,5 +17,5 @@
 <svelte:window on:scroll={handleOnScroll} />
 
 <div class="span2">
-  <button type="button" class="btn btn-primary btn-md" on:click={goTop}>Topo</button>
+  <button type="button" class="btn btn-primary btn-sm" on:click={goTop}>Topo</button>
 </div>

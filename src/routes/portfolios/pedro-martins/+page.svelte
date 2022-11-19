@@ -8,7 +8,7 @@
 	import { pedroMartins } from "../../../components/programmer.js";
 	import BackToTop from "../../../components/BackToTop.svelte";
 
-	const anchors = ["sobre", "experiência", "educação", "habilidades", "premiações"];
+	const anchors = ["Sobre", "Experiência", "Educação", "Habilidades", "Projetos"];
 
 	const scrollIntoView = ({ target }) => {
 		const el = document.querySelector(target.getAttribute('href'));
@@ -35,8 +35,60 @@
 
 <Thumbnail image={pedroMartins.picture}/>
 
+<section class="container mt-2">
+	<div class="row">
+		<div class="col">
+			<h2 id="anchor-{anchors[0]}">{anchors[0]}</h2>
+			<p>{pedroMartins.description}</p>
+			<BackToTop/>
+		</div>
+	</div>
+</section>
 
-{#each anchors as anchor}
-<h2 id="anchor-{anchor}">{anchor}</h2>
-<BackToTop/>
-{/each}
+<section class="container mt-2">
+	<div class="row">
+		<div class="col">
+			<h2 id="anchor-{anchors[1]}">{anchors[1]}</h2>
+			<p>{pedroMartins.description}</p>
+			<BackToTop/>
+		</div>
+	</div>
+</section>
+
+
+<section class="container mt-4">
+	<div class="row">
+		<div class="col">
+			<h2 id="anchor-{anchors[2]}">{anchors[2]}</h2>
+			<p>{pedroMartins.description}</p>
+			<BackToTop/>
+		</div>
+	</div>
+</section>
+
+<section class="container mt-4">
+	<div class="row">
+		<div class="col">
+			<h2 id="anchor-{anchors[3]}">{anchors[3]}</h2>
+			<p>{pedroMartins.description}</p>
+			<BackToTop/>
+		</div>
+	</div>
+</section>
+
+<section class="container mt-4">
+	<div class="row">
+		<div class="col">
+			<h2 id="anchor-{anchors[4]}">{anchors[4]}</h2>
+			<p>{pedroMartins.description}</p>
+			<BackToTop/>
+		</div>
+	</div>
+</section>
+
+<style>
+	section {
+		min-height: 100vh;
+	}
+</style>
+
