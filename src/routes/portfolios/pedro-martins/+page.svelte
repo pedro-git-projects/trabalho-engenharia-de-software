@@ -6,18 +6,15 @@
 <script>
 	import Thumbnail from "../../../components/Thumbnail.svelte";
 	import { pedroMartins } from "../../../components/programmer.js";
+	import BackToTop from "../../../components/BackToTop.svelte";
 
-	const anchors = ["sobre", "experiência", "educacao", "habilidades", "premiacoes"];
+	const anchors = ["sobre", "experiência", "educação", "habilidades", "premiações"];
 
-	const handleAnchorClick = (event) => {
-		event.preventDefault();
-		const link = event.currentTarget;
-		const anchorId = new URL(link.href).hash.replace('#', '');
-		const anchor = document.getElementById(anchorId);
-
-		window.scrollTo({
-			top: anchor.offsetTop,
-			behavior: "smooth"
+	const scrollIntoView = ({ target }) => {
+		const el = document.querySelector(target.getAttribute('href'));
+		if (!el) return;
+		el.scrollIntoView({
+			behavior: 'smooth'
 		});
 	};
 </script>
@@ -28,7 +25,7 @@
 
 <div class="container-fluid">
 {#each anchors as anchor}
-<a href="#anchor-{anchor}" class="p-3" on:click={handleAnchorClick}>
+<a href="#anchor-{anchor}" class="p-3" on:click={scrollIntoView}>
 	{anchor}
 </a>
 {/each}
@@ -41,4 +38,5 @@
 
 {#each anchors as anchor}
 <h2 id="anchor-{anchor}">{anchor}</h2>
+<BackToTop/>
 {/each}
