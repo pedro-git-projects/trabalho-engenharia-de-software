@@ -28,6 +28,7 @@
 <style>
   :global()  a {
     font-weight: bold;
+    color: #282a36;
   }
 
   :global(.dark) a {

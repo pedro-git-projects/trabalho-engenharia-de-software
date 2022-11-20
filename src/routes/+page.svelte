@@ -5,7 +5,6 @@
 <script>
 	import { pedroMartins, alisson, pH} from "../components/programmer";
 	import IndexCard from "../components/IndexCard.svelte";
-	import CardGrid from "../components/CardGrid.svelte";
 	import Title from "../components/Title.svelte";
 </script>
 
