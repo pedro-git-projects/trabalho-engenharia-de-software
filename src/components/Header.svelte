@@ -26,7 +26,7 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="/" data-bs-toggle="dropdown">Portfólios</a>
 						<!-- add bg-light || bg dark on toggle -->
-						<ul class="dropdown-menu ">
+						<ul id="drop" class="dropdown-menu bg-light">
 							<li class:active={$page.url.pathname === "portfolios/pedro-martins"}>
 								<a class="dropdown-item" href="/portfolios/pedro-martins">Pedro Martins</a>
 							</li>
@@ -60,7 +60,7 @@
 		color: #d79921;
 		text-decoration: none;
 	}
-
+	
 	:global(a.nav-link.dark) {
 		color: #f8f8f8;
 		text-decoration: none;
@@ -84,6 +84,27 @@
 	:global(a.dark:hover) {
 		color: #ff79c6;
 		text-decoration: none;
+	}
+
+	:global() .dropdown-item {
+		color: var(--link-color);
+	}
+
+	:global() .dropdown-toggle {
+		color: #fbf1c7;
+	}
+
+	:global(.dark) .dropdown-toggle {
+		color: #f8f8f2;
+	}
+	:global() .dropdown-item:hover {
+		background-color: #d79921;
+		color: #fbf1c7;
+	}
+
+	:global(.dark) .dropdown-item:hover {
+		background-color: #ff79c6;
+		color: #f8f8f2;
 	}
 
 	:global() .navbar-toggler-icon {

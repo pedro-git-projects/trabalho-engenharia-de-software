@@ -33,6 +33,15 @@
 			nav.classList.add('bg-dark') 
 		} 
 
+		let drop = document.getElementById("drop")
+		if(drop.classList.contains("bg-light")) {
+			drop.classList.remove("bg-light");
+			drop.classList.add("bg-dark");
+		} else {
+			drop.classList.remove("bg-dark");
+			drop.classList.add("bg-light");
+		}
+
 		/* Muda o tema do footer */
 		let f = document.getElementById('meuFooter')
 		if(f.classList.contains('bg-light')) {
