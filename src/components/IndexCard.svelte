@@ -4,6 +4,9 @@
   export let title;
   export let description;
   export let link;
+  const goToPortfolio = (path) => {
+	  goto(`/portfolios/${path}`)
+  }
 </script>
 
 <div class="col-lg-4 mb-3 d-flex align-items-stretch">
@@ -13,13 +16,13 @@
       <h5 class="card-title">{title}</h5>
       <p class="card-text mb-4">{description}</p>
       <div class="d-flex flex-row justify-content-center mt-auto">
-        <button 
-          on:click="{() => goto(link)}"
-          type="button" 
-          class="btn btn-primary mt-3">
-          Visitar	
-        </button>
-      </div>      
+      <button 
+        on:click="{() => goToPortfolio(link)}"
+        type="button" 
+        class="btn btn-primary mt-3">
+        Conheça 
+      </button>
+      </div>
     </div>
   </div>
 </div>

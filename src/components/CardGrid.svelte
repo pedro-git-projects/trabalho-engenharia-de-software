@@ -1,6 +1,5 @@
 <script>
-	import pedro from "../lib/pedro.jpg"
-	import alisson from "../lib/alisson.png"
+	import { pedroMartins, alisson, pH} from "../components/programmer";
 	import { goto } from '$app/navigation'
 	const goToPortfolio = (path) => {
 		goto(`/portfolios/${path}`)
@@ -11,10 +10,10 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
 	<div class="col">
 		<div class="card bg-light"> 
-			<img class="card-img-top" src={pedro} alt="pedro-pfp">
+			<img class="card-img-top" src={pedroMartins.picture} alt="pedro-pfp">
 			<div class="card-body">
-				<h5 class="card-title">Pedro Pereira</h5>
-				<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquam architecto nulla omnis odit excepturi, ipsum ex expedita illum sunt sed cupiditate libero sint fuga eligendi voluptatum molestiae accusamus aperiam!</p>
+				<h5 class="card-title">{pedroMartins.name}</h5>
+				<p class="card-text">{pedroMartins.description}</p>
 				<button 
 					on:click="{() => goToPortfolio("pedro-martins")}"
 					type="button" 
@@ -26,10 +25,10 @@
 	</div>
 	<div class="col">
 		<div class="card bg-light"> 
-			<img class="card-img-top" src={alisson} alt="alisson-pfp">
+			<img class="card-img-top" src={alisson.picture} alt="alisson-pfp">
 			<div class="card-body">
-				<h5 class="card-title">Alisson</h5>
-				<p class="card-text">lorem ipsum dolor sit amet consectetur adipisicing elit. minima aliquam architecto nulla omnis odit excepturi, ipsum ex expedita illum sunt sed cupiditate libero sint fuga eligendi voluptatum molestiae accusamus aperiam!</p>
+				<h5 class="card-title">{alisson.name}</h5>
+				<p class="card-text">{alisson.description}</p>
 				<button 
 					on:click="{() => goToPortfolio("alisson")}"
 					type="button" 
@@ -42,10 +41,10 @@
 
 	<div class="col">
 		<div class="card bg-light"> 
-			<img class="card-img-top" src={pedro} alt="alisson-pfp">
+			<img class="card-img-top" src={pH.picture} alt="alisson-pfp">
 			<div class="card-body">
-				<h5 class="card-title">Pedro Henrique</h5>
-				<p class="card-text">lorem ipsum dolor sit amet consectetur adipisicing elit. minima aliquam architecto nulla omnis odit excepturi, ipsum ex expedita illum sunt sed cupiditate libero sint fuga eligendi voluptatum molestiae accusamus aperiam!</p>
+				<h5 class="card-title">{pH.name}</h5>
+				<p class="card-text">{pH.description}</p>
 				<button 
 					on:click="{() => goToPortfolio("pedro-henrique")}"
 					type="button" 
