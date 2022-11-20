@@ -1,6 +1,6 @@
-import pedroImg from "../profiles/pedro.jpg";
-import alissonImg from "../profiles/alisson.png";
-import pHImg from "../profiles/pedro.jpg";
+import pedroImg from "../lib/pedro.jpg";
+import alissonImg from "../lib/alisson.png";
+import pHImg from "../lib/pedro.jpg";
 
 class Programmer {
 	constructor(name, picture, description) {

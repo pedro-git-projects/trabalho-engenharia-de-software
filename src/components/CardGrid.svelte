@@ -1,6 +1,6 @@
 <script>
-	import pedro from "../profiles/pedro.jpg"
-	import alisson from "../profiles/alisson.png"
+	import pedro from "../lib/pedro.jpg"
+	import alisson from "../lib/alisson.png"
 	import { goto } from '$app/navigation'
 	const goToPortfolio = (path) => {
 		goto(`/portfolios/${path}`)
@@ -59,7 +59,7 @@
 
 <style>
 	:global() button {
-		font-family: 'JMH Cthulhumbus UGalt1'; 
+		font-weight: bold;
 	}
 
 	:global(.dark) button {
