@@ -1,5 +1,4 @@
 <script>
-  import { goto } from '$app/navigation'
   export let image;
   export let title;
   export let description;
@@ -13,28 +12,30 @@
       <h5 class="card-title">{title}</h5>
       <p class="card-text mb-4">{description}</p>
       <div class="d-flex flex-row justify-content-center mt-auto">
-        <button 
-          on:click="{() => goto(link)}"
-          type="button" 
+        <a
+          href="{link}"
+          target="_blank"
+          rel="noreferrer"
+          role="button" 
           class="btn btn-primary mt-3">
-          Visitar	
-        </button>
+          Conheça 
+        </a>
       </div>      
     </div>
   </div>
 </div>
 
 <style>
-  :global() button {
+  :global()  a {
     font-weight: bold;
   }
 
-  :global(.dark) button {
+  :global(.dark) a {
     background-color: #bd93f9 !important;
     border-color: #bd93f9 !important;
   }
 
-  :global(.dark) button:hover {
+  :global(.dark) a:hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);		
   }
 

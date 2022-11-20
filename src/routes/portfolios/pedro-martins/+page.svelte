@@ -257,6 +257,7 @@
 	  image={go}
 	  title="Cthullhu Online"
 	  description="Aplicação web FullStack para criar investigadores para Call of Cthullu"
+      link="https://github.com/pedro-git-projects/svelte-go-cthullu-app"
    />
 
    <ProjectCard
