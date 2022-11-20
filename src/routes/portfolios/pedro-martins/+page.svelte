@@ -304,6 +304,22 @@
 </section>
 
 <style>
+	:global() .p-3:hover {
+		color: #d79921;
+	}
+
+	:global() .p-3 {
+		color: #fbf1c7;
+	}
+
+	:global(.dark) .p-3:hover {
+		color: #ff79c6;
+	}
+
+	:global(.dark) .p-3 {
+		color: #f8f8f2;
+	}
+
 	section {
 		min-height: 100vh;
 	}

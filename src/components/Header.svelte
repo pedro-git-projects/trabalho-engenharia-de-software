@@ -25,7 +25,6 @@
 				<ul class="navbar-nav">
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="/" data-bs-toggle="dropdown">Portfólios</a>
-						<!-- add bg-light || bg dark on toggle -->
 						<ul id="drop" class="dropdown-menu bg-light">
 							<li class:active={$page.url.pathname === "portfolios/pedro-martins"}>
 								<a class="dropdown-item" href="/portfolios/pedro-martins">Pedro Martins</a>
