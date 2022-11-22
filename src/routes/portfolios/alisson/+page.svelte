@@ -47,8 +47,8 @@
 			</p>
 			<div class="text-center">
 				<figure class="figure">
-					<img src="{fsf}" class="figure-img img-fluid rounded" alt="fsf">
-					<figcaption class="figure-caption">Logo da Free Softaware Foundation.</figcaption>
+					<img src="{js}" class="figure-img img-fluid rounded" alt="js">
+					<figcaption class="figure-caption">Imagem JavaScript</figcaption>
 				</figure>
 			</div>
 			<p>
@@ -72,8 +72,8 @@
 			</p>
 			<div class="text-center mb-4">
 				<figure class="figure">
-					<img src="{ntt}" class="figure-img img-fluid rounded" alt="fsf">
-					<figcaption class="figure-caption">Prédio da NTT Data em São Paulo.</figcaption>
+					<img src="{js}" class="figure-img img-fluid rounded" alt="js">
+					<figcaption class="figure-caption">Imagem JavaScript</figcaption>
 				</figure>
 			</div>
 			<BackToTop/>
@@ -138,9 +138,15 @@
 				/>
 				<ProjectCard
 				image={js}
+				title="Fã page da banda The Strokes"
+				description="Site de fã feito para fãs da banda The Strokes, com informações, músicas e produtos."
+				link="https://github.com/Alisson3366/strokes-community"
+				/>
+				<ProjectCard
+				image={js}
 				title="Calculadora de Média Individual Segundo Creitério de Avaliação do IESB"
 				description="Aplicação que renderiza uma página HTML com a média e a mensão de cada aluno inserido."
-				link="https://github.com/Alisson3366/calendarios-javascript"
+				link="https://github.com/Alisson3366/individual-average-calculator"
 				/>
 				<ProjectCard
 				image={js}
