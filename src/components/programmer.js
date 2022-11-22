@@ -1,6 +1,6 @@
 import pedroImg from '../lib/pedro.jpg';
 import alissonImg from '../lib/alisson.png';
-import pHImg from '../lib/pedro.jpg';
+import pHImg from '../lib/PedroHenrique.jpg';
 
 class Programmer {
 	constructor(name, picture, description) {
@@ -18,6 +18,6 @@ const pHDescription = `"At vero eos et accusamus et iusto odio dignissimos ducim
 
 const pedroMartins = new Programmer('Pedro Martins', pedroImg, pedroDescription);
 const alisson = new Programmer('Alisson', alissonImg, alissonDescription);
-const pH = new Programmer('Pedro Henrique', pHImg, pHDescription);
+const PedroHenrique = new Programmer('Pedro Henrique', pHImg, pHDescription);
 
-export { pedroMartins, alisson, pH };
+export { pedroMartins, alisson, PedroHenrique };

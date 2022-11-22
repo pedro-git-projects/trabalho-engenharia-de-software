@@ -3,7 +3,7 @@
 </svelte:head>
 
 <script>
-	import { pedroMartins, alisson, pH} from "../components/programmer";
+	import { pedroMartins, alisson, PedroHenrique} from "../components/programmer";
 	import IndexCard from "../components/IndexCard.svelte";
 	import Title from "../components/Title.svelte";
 </script>
@@ -25,9 +25,9 @@
 	/>
 
 	<IndexCard 
-		image={pH.picture}
-		title={pH.name}
-		description={pH.description}
+		image={PedroHenrique.picture}
+		title={PedroHenrique.name}
+		description={PedroHenrique.description}
 		link="pedro-henrique"
 	/>
 </div>
