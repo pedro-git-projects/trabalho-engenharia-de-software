@@ -138,9 +138,15 @@
 				/>
 				<ProjectCard
 				image={js}
+				title="Fã page da banda The Strokes"
+				description="Site de fã feito para fãs da banda The Strokes, com informações, músicas e produtos."
+				link="https://github.com/Alisson3366/strokes-community"
+				/>
+				<ProjectCard
+				image={js}
 				title="Calculadora de Média Individual Segundo Creitério de Avaliação do IESB"
 				description="Aplicação que renderiza uma página HTML com a média e a mensão de cada aluno inserido."
-				link="https://github.com/Alisson3366/calendarios-javascript"
+				link="https://github.com/Alisson3366/individual-average-calculator"
 				/>
 				<ProjectCard
 				image={js}
