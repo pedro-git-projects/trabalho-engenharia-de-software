@@ -1,19 +1,51 @@
-# Trabalho em Grupo Pivotal
+# Projeto Avaliativo - Pivotal Tracker + Github
 
-## Objetivo do Trabalho:
+## Objetivos do Trabalho:
 
-Construir uma página web inicial que redirecione para o portifólio de cada um dos integrantes do grupo. A página incial contém a foto de cada um dos alunos. As páginas de portifólios contêm um breve resumo sobre eles, informando: hobbies, certificados, experiência profissional e áreas de atuação.
+- Criar um projeto no *Pivotal Tracker* e uma contraparte no *Github*. 
 
-## Seções
+- Ativar o webhook entre o pivotal e o github.
 
-O site é composto por duas seções:
+- Elaborar um site de portfólio que tenha:
 
--   Home ( /index.html )
--   Portifólios ( /portifolios/nome-aluno.html )
+	- Uma foto de cada um dos integrantes com descrição
+
+	- Uma página para cada integrante com o seu portfólio
+
+- A construção do site deverá ser documenta por meio do pivotal tracker, com histórias sendo abertas para a execução das tarefas
+	
+## Executando o Projeto:
+
+**É necessário ter o npm instalado para executar o projeto.**
+
+Para instalar as dependências execute:
+
+```sh
+$ npm install
+```
+
+Em seguida, para executar o projeto basta executar:
+
+```sh
+$ npm run dev
+```
 
 ## Tecnologias Utilizadas
 
-Para o desenvolvimento deste site utilizamos as seguintes tecnologias:
+### Gerenciamento de Projetos:
 
--   Frameworks: Svelte e Svelte Kit;
--   Bibliotecas: Bootstrap e SCSS.
+Pivotal tracker
+
+### Desenvolvimento 
+
+- Svelte
+
+- Svelte Kit
+
+- Bootstrap
+
+- Sass
+
+## Link para o pivotal:
+
+https://www.pivotaltracker.com/n/projects/2611499
