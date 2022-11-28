@@ -5,6 +5,8 @@
 
 <script>
 	import js from "../../../lib/projects/js.jpeg";
+	import piri from "../../../lib/projects/piri.jpg";
+	import bike from "../../../lib/projects/bike.jpg";
 
 	import ProjectCard from "../../../components/ProjectCard.svelte";
 	import Thumbnail from "../../../components/Thumbnail.svelte";
@@ -47,8 +49,8 @@
 			</p>
 			<div class="text-center">
 				<figure class="figure">
-					<img src="{js}" class="figure-img img-fluid rounded" alt="js">
-					<figcaption class="figure-caption">Imagem JavaScript</figcaption>
+					<img src="{bike}" class="figure-img img-fluid rounded" alt="Passeio de bike próximo ao Lago Paranoá" width="80%">
+					<figcaption class="figure-caption">Passeio de bike próximo ao Lago Paranoá</figcaption>
 				</figure>
 			</div>
 			<p>
@@ -72,8 +74,8 @@
 			</p>
 			<div class="text-center mb-4">
 				<figure class="figure">
-					<img src="{js}" class="figure-img img-fluid rounded" alt="js">
-					<figcaption class="figure-caption">Imagem JavaScript</figcaption>
+					<img src="{piri}" class="figure-img img-fluid rounded" alt="Ecoturismo em Pirenópolis" width="80%">
+					<figcaption class="figure-caption">Ecoturismo em Pirenópolis</figcaption>
 				</figure>
 			</div>
 			<BackToTop/>
@@ -127,7 +129,7 @@
 <section class="container mt-4">
 	<div class="row">
 		<div class="col">
-			<h2 id="anchor-{anchors[3]}">{anchors[3]}</h2>
+			<h2 id="anchor-{anchors[2]}">{anchors[2]}</h2>
 			<hr>
 			<div class="row mt-4">
 				<ProjectCard
@@ -152,7 +154,7 @@
 				image={js}
 				title="Consumo de API com JavaScript"
 				description="Aplicação que consome uma API Rest (The-Cat-API) para renderizar uma imagem aleatória de gatinho."
-				link="https://github.com/Alisson3366/pivotal-tutorial/blob/main/index.html"
+				link="https://github.com/Alisson3366/pivotal-tutorial"
 				/>
 				<ProjectCard
 				image={js}
