@@ -15,6 +15,7 @@
 	import fsf from "../../../lib/projects/fsf.svg";
 	import gc from "../../../lib/projects/gc.jpg";
 	import parque from "../../../lib/projects/parque.jpg";
+	import certificado from "../../../lib/certificad_pedro.png";
 
 	import ProjectCard from "../../../components/ProjectCard.svelte";
 
@@ -153,6 +154,30 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="cointainer">
+					<div class="row">
+						<div class="col">
+							<p>
+								Neste semestre obtive também a certificação <it>Scrum Foundation Certificate</it> da CertiProf.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<figure class="figure text-center">
+								<img src="{certificado}" class="figure-img img-fluid rounded" alt="fsf">
+								<figcaption class="figure-caption">Certificado.</figcaption>
+								</figure>
+						</div>
+					</div>
+				</div>
+
+
+
 			<BackToTop/>
 		</div>
 	</div>
@@ -169,8 +194,6 @@
 				<li>HTML</li>
 				<li>CSS</li>
 				<li>SCSS</li>
-				<li>SCSS</li>
-				<li>Bootstrap</li>
 				<li>Bootstrap</li>
 				<li>Svelte</li>
 				<li>React</li>
